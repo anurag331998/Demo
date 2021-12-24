@@ -8,13 +8,14 @@ function App() {
       id: 'e1',
       title: 'Room rent',
       amount: 5000,
-      date: new Date(2021 , 12, 2),
+      date: new Date(2021, 12, 2),
     },
-    { id: 'e2', 
-    title: 'Groceries', 
-    amount: 1500, 
-    date: new Date(2021, 12, 5) 
-  },
+    {
+      id: 'e2',
+      title: 'Groceries',
+      amount: 1500,
+      date: new Date(2021, 12, 5)
+    },
     {
       id: 'e3',
       title: 'Medical Insurance',
@@ -33,7 +34,10 @@ function App() {
     <div>
       <h2>First React Code</h2>
       <p>Expense Tracker</p>
-      <input type="text" placeholder='Type whatyou what'></input>
+      <p>Month:
+        <input type="text" placeholder='Type what you what'>
+        </input>
+      </p>
       <button>Click Me</button>
       <Expenses items={expenses} />
     </div>
